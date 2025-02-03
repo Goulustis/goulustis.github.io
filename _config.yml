@@ -171,8 +171,8 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_scripts",
-          "_pages/about.md",
+# "_scripts" This is for search
+include: ["_pages/about.md",
           "_pages/cv.md"]
 exclude:
   - bin/
