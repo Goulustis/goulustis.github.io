@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: The Man To Be Rich # the website title (if blank, full name will be used instead)
 first_name: Matthew
-middle_name: R.
+middle_name: 
 last_name: Tang
 contact_note: >
 # leaving this empty
@@ -171,7 +171,9 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages", "_scripts"]
+include: ["_scripts",
+          "_pages/about.md",
+          "_pages/cv.md"]
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -194,9 +196,6 @@ exclude:
   - vendor
   - _posts/
   - _bibliography/
-  - _data/repositories.yml
-  - _pages/teaching.md
-  - _pages/profiles.md
 
 
 keep_files:
