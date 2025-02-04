@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Motto:<span style="color:blue; font-style:italic;">I can, therefore I will! Alea iacta est!</span>
 
 profile:
   align: right
