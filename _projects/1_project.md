@@ -76,7 +76,7 @@ Enjoy the results below!
     },
     {
       label: "3D result 2",
-      iframeSrc: "../assets/html/proj_1/pokemon.html"
+      iframeSrc: "/assets/html/proj_1/pokemon.html"
     }
   ];
 
