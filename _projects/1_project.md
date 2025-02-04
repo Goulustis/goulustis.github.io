@@ -41,6 +41,32 @@ Enjoy the results below!
 </div>
 
 
+<style>
+  /* 
+    Example CSS for .loadMoreButton 
+    - Rounded corners 
+    - Blue-ish background 
+    - White text 
+    - Simple hover effect
+  */
+  .loadMoreButton {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;         /* Rounded corners */
+    background-color: #007bff;  /* Blue-ish background */
+    color: #fff;                /* White text */
+    border: none;               /* Remove default border */
+    cursor: pointer;            /* Pointer cursor on hover */
+    font-size: 16px;            /* Increase font size slightly */
+    transition: background-color 0.2s ease; /* Smooth hover transition */
+  }
+
+  /* Optional: Change color slightly on hover */
+  .loadMoreButton:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+  }
+</style>
+
 <hr>
 <div class="section" id="gallery">
   <div class="title" style="text-align: center; font-weight: bold; font-size: 2em;">Gallery</div>
