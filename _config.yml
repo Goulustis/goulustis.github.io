@@ -197,6 +197,7 @@ exclude:
   - vendor
   - _posts/
   - _bibliography/
+  - archived/
 
 
 keep_files:
