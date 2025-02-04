@@ -39,3 +39,98 @@ Enjoy the results below!
     </tr>
   </table>
 </div>
+
+
+<hr>
+<div class="section" id="gallery">
+  <div class="title" style="text-align: center; font-weight: bold; font-size: 2em;">Gallery</div>
+  <p class="rp">
+    See the results in 3D! Loading takes a little time. Then swing the thing around to experience all the different perspectives!
+  </p>
+
+  <!-- Buttons -->
+  <div style="text-align: center;">
+    <button id="prevButton" class="loadMoreButton">Show the Previous!</button>
+    <button id="nextButton" class="loadMoreButton">Show the Next!</button>
+  </div>
+
+  <!-- Container for currently visible group -->
+  <div id="contentContainer" style="margin-top: 1rem;"></div>
+</div>
+
+<script>
+  // Array of "groups" to show, one at a time.
+  // Replace 'label' and 'iframeSrc' with your real data/files.
+  const groups = [
+    {
+      label: "2D Result 1",
+      iframeSrc: "/assets/html/proj_1/anime_2.html"
+    },
+    {
+      label: "2D Result 2",
+      iframeSrc: "/assets/html/proj_1/guys.html"
+    },
+    {
+      label: "3D result 1",
+      iframeSrc: "/assets/html/proj_1/anime_3.html"
+    },
+    {
+      label: "3D result 2",
+      iframeSrc: "../assets/html/proj_1/pokemon.html"
+    }
+  ];
+
+  // Keep track of which group is displayed
+  let currentIndex = 0;
+
+  // Grab DOM elements for convenience
+  const prevButton = document.getElementById("prevButton");
+  const nextButton = document.getElementById("nextButton");
+  const contentContainer = document.getElementById("contentContainer");
+
+  // Renders the currently selected group into the page
+  function renderGroup() {
+    const { label, iframeSrc } = groups[currentIndex] || {};
+    
+    // Replace content with the new group
+    contentContainer.innerHTML = `
+      <div class="group">
+        <p class="box_tt" style="text-align: center; font-size: 1.5em;">${label}</p>
+        <iframe 
+          src="${iframeSrc}" 
+          width="100%" 
+          height="800px" 
+          frameborder="0">
+        </iframe>
+        <hr>
+      </div>
+    `;
+    
+    // Update button states
+    updateButtons();
+  }
+
+  // Enable/disable buttons if we're at the ends
+  function updateButtons() {
+    prevButton.disabled = (currentIndex <= 0);
+    nextButton.disabled = (currentIndex >= groups.length - 1);
+  }
+
+  // Click handlers
+  nextButton.addEventListener("click", () => {
+    if (currentIndex < groups.length - 1) {
+      currentIndex++;
+      renderGroup();
+    }
+  });
+
+  prevButton.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      renderGroup();
+    }
+  });
+
+  // Render the initial group on page load
+  renderGroup();
+</script>
