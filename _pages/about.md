@@ -36,7 +36,7 @@ I'm a recent graduated masters student from the [University of British Columbia]
 Now that I have graduated, I spend all my time thinking how I can do nothing and money come to me. I tried:
 - Crypto `--` Lost big bucks
 - Wav/mp4 to Midi `--` Maybe going somewhere
-- Writing chatbot for UBC `--` going no where
+- Writing chatbot for UBC `--` Maybe going somewhere
 - Multiview Wire Art `--` Looks pretty good
 
 I'm open to any crazy ideas anyone has. Just YANK me an email!
