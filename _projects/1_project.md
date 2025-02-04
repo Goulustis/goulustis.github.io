@@ -11,7 +11,7 @@ This project is inspired by [dream wire](https://dreamwireart.github.io/). Their
 - I don't like the fact that I need to differentiate through a diffusion model for gradient step update
 - I think the images could look a lot better if you don't include the constraint that the whole art is **ONE** wire.
 
-I followed [dream wire](https://dreamwireart.github.io/) and extended [diffsvg](https://github.com/BachiLi/diffvg) to 3D. I, then, mimize the MSE loss between the rendering of [diffsvg](https://github.com/BachiLi/diffvg) and the target image to obtain a list 3D bezier curves.
+I followed [dream wire](https://dreamwireart.github.io/) and extended [diffsvg](https://github.com/BachiLi/diffvg) to 3D. I, then, mimize the MSE loss between the rendering of [diffsvg](https://github.com/BachiLi/diffvg) and the target image to obtain a list 3D bezier curves. I then added a bunch of secret sauces to get it working correctly.
 
 ### Notable findings:
 - The thicker the lines, the better the results, as it is less constraint
