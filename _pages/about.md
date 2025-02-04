@@ -39,4 +39,9 @@ Now that I have graduated, I spend all my time thinking how I can do nothing and
 - Writing chatbot for UBC `--` Maybe going somewhere
 - Multiview Wire Art `--` Looks pretty good
 
+My current interests:
+- 3D vision
+- LLMs
+- Not going broke
+
 I'm open to any crazy ideas anyone has. Just YANK me an email!
