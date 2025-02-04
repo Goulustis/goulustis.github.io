@@ -2,16 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: Motto:<span style="color:#53b1fa; font-style:italic;">I can, therefore I will! Alea iacta est!</span>
+subtitle: "Motto: <span style='color:#53b1fa; font-style:italic;'>I can, therefore I will! Alea iacta est!</span>"
 
 profile:
   align: right
   image: profile_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    Email: <a href='cnimav@gmail.com'>cnimaiv@gmail.com</a>
-
-selected_papers: false # includes a list of papers marked as "selected={true}"
+    Email: <a href='mailto:cnimav@gmail.com'>cnimaiv@gmail.com</a><br>
+    GitHub: <a href='https://github.com/Goulustis'>Goulustis</a>
+    
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
 projects:
