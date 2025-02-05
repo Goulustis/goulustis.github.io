@@ -2,7 +2,7 @@
 layout: post
 title: Dealing with Duo-booting when middle-fingered
 date: 2025-02-04 21:01:00
-description: Describes a way to duo boot when the hardware gives you a middle fingure
+description: Describes a way to duo boot when the hardware refuses to boot into grub
 # tags: random
 # categories: random
 thumbnail: assets/img/middle_finger.png
