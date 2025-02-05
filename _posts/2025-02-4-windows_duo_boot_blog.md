@@ -9,6 +9,7 @@ thumbnail: assets/img/middle_finger.png
 ---
 
 Firstly, Microsoft is a piece of **SHIT**. I don't know how, but they somehow was able to make the hardware to not detect the grub.efi **DESPITE** every configuration installing duo-boot ubuntu normally. The fix is to **OVERWRITE THE WINDOWS EFI** with grub.efi. Here is how you do it:  
+  
 **Step 1:** Boot into Ubuntu through a USB stick  
 **Step 2:** In the terminal, mount the efi partition
 ```bash
