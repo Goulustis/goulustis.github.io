@@ -50,7 +50,7 @@ rss_icon: true
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: false
+search_enabled: true      # enable search feature
 socials_in_search: false
 bib_search: false
 
@@ -172,9 +172,11 @@ kramdown:
 
 # Includes & excludes
 # "_scripts" This is for search
-include: ["_pages/about.md",
+include: ["_scripts",
+          "_pages/about.md",
           "_pages/projects.md",
-          "_pages/blog.md"]
+          "_pages/blog.md"
+          ]
 exclude:
   - bin/
   - CONTRIBUTING.md
