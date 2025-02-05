@@ -89,19 +89,19 @@ Enjoy the results below!
   // Replace 'label' and 'iframeSrc' with your real data/files.
   const groups = [
     {
-      label: "2D Result 1",
+      label: "2 images Result 1",
       iframeSrc: "/assets/html/proj_1/anime_2.html"
     },
     {
-      label: "2D Result 2",
+      label: "2 images Result 2",
       iframeSrc: "/assets/html/proj_1/guys.html"
     },
     {
-      label: "3D result 1",
+      label: "3 images result 1",
       iframeSrc: "/assets/html/proj_1/anime_3.html"
     },
     {
-      label: "3D result 2",
+      label: "3 images result 2",
       iframeSrc: "/assets/html/proj_1/pokemon.html"
     }
   ];
