@@ -5,7 +5,7 @@ date: 2025-02-04 21:01:00
 description: Describes a way to duo boot when the hardware gives you a middle fingure
 # tags: random
 # categories: random
-thumbnail: assets/img/middle_fingre.png
+thumbnail: assets/img/middle_finger.png
 ---
 
 Firstly, Microsoft is a piece of **SHIT**. I don't know how, but they somehow was able to make the hardware to not detect the grub.efi **DESPITE** every configuration installing duo-boot ubuntu normally. The fix is to **OVERWRITE THE WINDOWS EFI** with grub.efi. Here is how you do it:  
