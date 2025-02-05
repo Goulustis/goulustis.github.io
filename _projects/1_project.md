@@ -69,7 +69,8 @@ Enjoy the results below!
 
 <hr>
 <div class="section" id="gallery">
-  <div class="title" style="text-align: center; font-weight: bold; font-size: 2em;">Gallery</div>
+  <!-- <div class="title" style="text-align: center; font-weight: bold; font-size: 2em;">Gallery</div> -->
+  <h2 style="text-align: center;">Gallery</h2>
   <p class="rp" style="text-align: center;">
     See the results in 3D! Loading takes a little time. Then swing the thing around to experience all the different perspectives!
   </p>
