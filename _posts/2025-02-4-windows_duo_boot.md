@@ -1,49 +1,34 @@
 ---
 layout: post
-title: a post with images
-date: 2015-05-15 21:01:00
-description: this is what included images could look like
-tags: formatting images
-categories: sample-posts
-thumbnail: assets/img/9.jpg
+title: Dealing with Duo-booting when middle-fingered
+date: 2025-02-04 21:01:00
+description: Describes a way to duo boot when the hardware gives you a middle fingure
+# tags: random
+# categories: random
+thumbnail: assets/img/middle_fingre.png
 ---
 
-This is an example post with image galleries.
+Firstly, Microsoft is a piece of **SHIT**. I don't know how, but they somehow was able to make the hardware to not detect the grub.efi **DESPITE** every configuration installing duo-boot ubuntu normally. The fix is to **OVERWRITE THE WINDOWS EFI** with grub.efi. Here is how you do it:  
+**Step 1:** Boot into Ubuntu through a USB stick  
+**Step 2:** In the terminal, mount the efi partition
+```bash
+sudo mount /dev/sda1 /mnt
+```
+The efi partition should have a structure similar to:
+```
+/mnt/efi/EFI/
+├── Boot/
+│   └── bootx64.efi
+├── Microsoft/
+│   ├── Boot/
+│   │   ├── bootmgfw.efi
+│   │   ├── BCD
+│   │   ├── memtest.efi
+│   │   └── other boot-related files
+```
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/9.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/7.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
-</div>
+**Step 3:** rename the bootmgfw.efi to ori_bootmgfw.efi. Copy grub.efi to the directory and rename it as the original windows efi, bootmgfw.efi. Reboot the PC should boot into grub.  
 
-Images can be made zoomable.
-Simply add `data-zoomable` to `<img>` tags that you want to make zoomable.
+*Note: bootmgfw.efi is the windows efi.*
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/8.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/10.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-The rest of the images in this post are all zoomable, arranged into different mini-galleries.
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/12.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/7.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
+Finally, The computer should boot to grub when start. And **FREED FROM THE CLUTCHES OF WINDOWS!!!!!!!**
