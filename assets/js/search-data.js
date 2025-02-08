@@ -30,7 +30,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/userful_links/";
           },
-        },{id: "post-dealing-with-duo-booting-when-middle-fingered",
+        },{id: "post-setting-up-ssh-key",
+      
+        title: "Setting up ssh key",
+      
+      description: "How to setup ssh key for fast login",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/ssh_key_setup/";
+        
+      },
+    },{id: "post-adding-a-grub-entry",
+      
+        title: "Adding a grub entry",
+      
+      description: "How to add a grub entry",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/adding_boot_entry_grub/";
+        
+      },
+    },{id: "post-dealing-with-duo-booting-when-middle-fingered",
       
         title: "Dealing with Duo-booting when middle-fingered",
       
@@ -39,17 +61,6 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2025/windows_duo_boot_blog/";
-        
-      },
-    },{id: "post-setting-up-ssh-key",
-      
-        title: "setting up ssh key",
-      
-      description: "How to setup ssh key for fast login",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/ssh_key_setup/";
         
       },
     },{id: "news-a-simple-inline-announcement",
