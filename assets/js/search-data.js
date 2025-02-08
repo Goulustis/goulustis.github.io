@@ -34,6 +34,17 @@ ninja.data = [{
           window.location.href = "/blog/2025/windows_duo_boot_blog/";
         
       },
+    },{id: "post-setting-up-ssh-key",
+      
+        title: "setting up ssh key",
+      
+      description: "How to setup ssh key for fast login",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/ssh_key_setup/";
+        
+      },
     },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
