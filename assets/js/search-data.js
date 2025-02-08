@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-useful-links",
+          title: "useful links",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/userful_links/";
+          },
         },{id: "post-dealing-with-duo-booting-when-middle-fingered",
       
         title: "Dealing with Duo-booting when middle-fingered",
