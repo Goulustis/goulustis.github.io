@@ -1,6 +1,6 @@
 ---
 layout: post
-title: setting up ssh key
+title: Setting up ssh key
 date: 2025-02-04 21:01:00
 description: How to setup ssh key for fast login
 # tags: random
