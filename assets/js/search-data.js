@@ -74,8 +74,8 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-multi-view-wire-art-mvwa-dreamwire-relaxed",
-          title: 'Multi-View wire art(MVWA) - Dreamwire Relaxed',
+          section: "News",},{id: "projects-multi-view-wire-art-mvwa-relaxed",
+          title: 'Multi-View wire art(MVWA) Relaxed',
           description: "Given 2 or 3 images of line drawing, find a bunch of line in 3D such that when look at a certain direction will see the given image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
