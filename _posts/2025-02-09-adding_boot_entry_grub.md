@@ -21,5 +21,5 @@ menuentry "Windows Boot Manager 2" {
 For the root thing... If it ain't `hd0,gpt1` or `hd1,gpt1`:
 - reboot to grub menue
 - press `c`
-- ls and you should see something like: `(hd0), (hd1,gpt1) ....`
+- `ls` and you should see something like: `(hd0), (hd1,gpt1) ....`
 - you can `ls (hd1,gpt1)/`. If you see a `$BOOT`, thats the thing you should set
