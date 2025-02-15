@@ -10,5 +10,5 @@ related_posts: false
 - [ ] ticket/hotel Singapore
 - [ ] plan thursday
 - [ ] eye degree appointment
-- [ ] code perspective projections
+- [ ] code perspective/orthogonal projections
 - [ ] learn more cooking
