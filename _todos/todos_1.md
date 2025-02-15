@@ -9,6 +9,7 @@ related_posts: false
 - [ ] push-ups / excersize morning 30 min
 - [ ] ticket/hotel Singapore
 - [ ] plan thursday
+- [ ] add date alerts
 - [ ] eye degree appointment
 - [ ] code perspective/orthogonal projections
 - [ ] learn more cooking
