@@ -91,7 +91,7 @@ ninja.data = [{
           description: "A chatbot that can answer question about your undergrad sauder courses",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "todos-blast-messages-push-ups-excersize-morning-30-min-ticket-hotel-singapore-plan-thursday-add-date-alerts-eye-degree-appointment-code-perspective-orthogonal-projections-learn-more-cooking",
+            },},{id: "todos-blast-messages-push-ups-excersize-morning-30-min-ticket-hotel-singapore-plan-thursday-add-date-alerts-eye-degree-appointment-check-car-practice-time-with-mom-code-perspective-orthogonal-projections-learn-more-cooking",
           title: 'blast messages push-ups / excersize morning 30 min ticket/hotel Singapore plan thursday add...',
           description: "",
           section: "Todos",},{
