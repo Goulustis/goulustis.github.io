@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-todos",
+          title: "todos",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/todos/";
+          },
         },{id: "nav-useful-links",
           title: "useful links",
           description: "",
@@ -84,7 +91,10 @@ ninja.data = [{
           description: "A chatbot that can answer question about your undergrad sauder courses",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{
+            },},{id: "todos-blast-messages-push-ups-excersize-morning-30-min-ticket-hotel-singapore-plan-thursday-eye-degree-appointment-code-perspective-orthogonal-projections-learn-more-cooking",
+          title: 'blast messages push-ups / excersize morning 30 min ticket/hotel Singapore plan thursday eye...',
+          description: "",
+          section: "Todos",},{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
