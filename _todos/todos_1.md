@@ -11,5 +11,6 @@ related_posts: false
 - [ ] plan thursday
 - [ ] add date alerts
 - [ ] eye degree appointment
+- [ ] check car practice time with mom?
 - [ ] code perspective/orthogonal projections
 - [ ] learn more cooking
