@@ -91,8 +91,11 @@ ninja.data = [{
           description: "A chatbot that can answer question about your undergrad sauder courses",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "todos-blast-messages-push-ups-excersize-morning-30-min-wow-you-re-weak-haircut-booking-monday-at-12-00pm-aberdeen-plan-thursday-add-date-alerts-get-it-here-eye-degree-appointment-just-yeet-your-ass-here-check-car-practice-time-code-perspective-orthogonal-projections-learn-more-cooking-ticket-hotel-singapore",
+            },},{id: "todos-blast-messages-push-ups-excersize-morning-30-min-wow-you-re-weak-haircut-booking-monday-at-12-00pm-aberdeen-plan-thursday-add-date-alerts-get-it-here-eye-degree-appointment-just-yeet-your-ass-here-check-car-practice-time-learn-more-cooking",
           title: 'blast messages push-ups / excersize morning 30 min Wow; you’re weak haircut booking...',
+          description: "",
+          section: "Todos",},{id: "todos-cook-vegtables-swim-code-perspective-orthogonal-projections-ticket-hotel-singapore",
+          title: 'cook vegtables   swim   code perspective/orthogonal projections   ticket/hotel Singapore',
           description: "",
           section: "Todos",},{
       id: 'light-theme',
