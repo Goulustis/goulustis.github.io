@@ -15,7 +15,5 @@ related_posts: false
     - get it [here](https://www.officeholidays.com/subscribe/china)
 - [x] eye degree appointment;
     - just yeet your ass [here](https://eyeplus.ca/pages/insurance)
-- [ ] check car practice time?
-- [ ] code perspective/orthogonal projections
-- [ ] learn more cooking
-- [ ] ticket/hotel Singapore
+- [x] check car practice time?
+- [x] learn more cooking
