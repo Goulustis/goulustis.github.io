@@ -5,12 +5,17 @@ inline: true
 related_posts: false
 ---
 
-- [ ] blast messages
-- [ ] push-ups / excersize morning 30 min
-- [ ] ticket/hotel Singapore
-- [ ] plan thursday
-- [ ] add date alerts
-- [ ] eye degree appointment
-- [ ] check car practice time with mom?
+- [x] blast messages
+- [x] push-ups / excersize morning 30 min
+    - Wow; you're weak
+- [x] haircut booking
+    - Monday at 12:00pm aberdeen
+- [x] plan thursday
+- [x] add date alerts
+    - get it [here](https://www.officeholidays.com/subscribe/china)
+- [x] eye degree appointment;
+    - just yeet your ass [here](https://eyeplus.ca/pages/insurance)
+- [ ] check car practice time?
 - [ ] code perspective/orthogonal projections
 - [ ] learn more cooking
+- [ ] ticket/hotel Singapore
