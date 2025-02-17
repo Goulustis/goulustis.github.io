@@ -31,7 +31,7 @@ ninja.data = [{
             window.location.href = "/todos/";
           },
         },{id: "nav-useful-links",
-          title: "useful links",
+          title: "Useful links",
           description: "",
           section: "Navigation",
           handler: () => {
