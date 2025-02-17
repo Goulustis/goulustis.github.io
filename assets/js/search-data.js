@@ -94,8 +94,8 @@ ninja.data = [{
             },},{id: "todos-blast-messages-push-ups-excersize-morning-30-min-wow-you-re-weak-haircut-booking-monday-at-12-00pm-aberdeen-plan-thursday-add-date-alerts-get-it-here-eye-degree-appointment-just-yeet-your-ass-here-check-car-practice-time-learn-more-cooking",
           title: 'blast messages push-ups / excersize morning 30 min Wow; you’re weak haircut booking...',
           description: "",
-          section: "Todos",},{id: "todos-cook-vegtables-swim-code-perspective-orthogonal-projections-ticket-hotel-singapore",
-          title: 'cook vegtables   swim   code perspective/orthogonal projections   ticket/hotel Singapore',
+          section: "Todos",},{id: "todos-cook-vegtables-swim-ticket-hotel-singapore-code-perspective-orthogonal-projections",
+          title: 'cook vegtables   swim   ticket/hotel Singapore   code perspective/orthogonal projections',
           description: "",
           section: "Todos",},{
       id: 'light-theme',
