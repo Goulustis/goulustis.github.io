@@ -97,6 +97,9 @@ ninja.data = [{
           section: "Todos",},{id: "todos-cook-vegtables-swim-ticket-hotel-singapore-code-perspective-orthogonal-projections",
           title: 'cook vegtables   swim   ticket/hotel Singapore   code perspective/orthogonal projections',
           description: "",
+          section: "Todos",},{id: "todos-investigate-if-perspective-works-better-or-not-simple-excersize",
+          title: 'Investigate if perspective works better or not   Simple excersize',
+          description: "",
           section: "Todos",},{
       id: 'light-theme',
       title: 'Change theme to light',
