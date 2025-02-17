@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-- [ ] cook vegtables
-- [ ] swim
-- [ ] code perspective/orthogonal projections
+- [x] cook vegtables
+- [x] swim
 - [ ] ticket/hotel Singapore
+- [ ] code perspective/orthogonal projections
