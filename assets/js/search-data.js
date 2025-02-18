@@ -97,8 +97,11 @@ ninja.data = [{
           section: "Todos",},{id: "todos-cook-vegtables-swim-ticket-hotel-singapore-code-perspective-orthogonal-projections",
           title: 'cook vegtables   swim   ticket/hotel Singapore   code perspective/orthogonal projections',
           description: "",
-          section: "Todos",},{id: "todos-investigate-if-perspective-works-better-or-not-simple-excersize-look-at-singapore-and-nearby-to-decide-if-you-fly-back-immediately-after-conference-yeet-your-ass-just-yeet-your-ass-here-for-eye-thing",
-          title: 'Investigate if perspective works better or not Simple excersize look at singapore and...',
+          section: "Todos",},{id: "todos-investigate-if-perspective-works-better-or-not-look-at-singapore-and-nearby-to-decide-if-you-fly-back-immediately-after-conference",
+          title: 'Investigate if perspective works better or not look at singapore and nearby to...',
+          description: "",
+          section: "Todos",},{id: "todos-checkout-big-aunty-water-drinking-thing-do-sis-s-img-amp-gt-drawing",
+          title: 'checkout big aunty water drinking thing   do sis’s img -&amp;amp;gt; drawing',
           description: "",
           section: "Todos",},{
       id: 'light-theme',
