@@ -5,5 +5,6 @@ inline: true
 related_posts: false
 ---
 
-- [ ] checkout big aunty water drinking thing
-- [ ] do sis's img -> drawing
+- [x] checkout big aunty water drinking thing
+- [x] fill out the form
+- [x] do sis's img -> drawing (half done)
