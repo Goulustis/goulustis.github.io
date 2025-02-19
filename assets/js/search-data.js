@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/todos/";
           },
+        },{id: "nav-cool-papers",
+          title: "Cool papers",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cool_papers/";
+          },
         },{id: "nav-useful-links",
           title: "Useful links",
           description: "",
@@ -100,8 +107,8 @@ ninja.data = [{
           section: "Todos",},{id: "todos-investigate-if-perspective-works-better-or-not-look-at-singapore-and-nearby-to-decide-if-you-fly-back-immediately-after-conference",
           title: 'Investigate if perspective works better or not look at singapore and nearby to...',
           description: "",
-          section: "Todos",},{id: "todos-checkout-big-aunty-water-drinking-thing-do-sis-s-img-amp-gt-drawing",
-          title: 'checkout big aunty water drinking thing   do sis’s img -&amp;amp;gt; drawing',
+          section: "Todos",},{id: "todos-checkout-big-aunty-water-drinking-thing-fill-out-the-form-do-sis-s-img-amp-gt-drawing-half-done",
+          title: 'checkout big aunty water drinking thing fill out the form do sis’s img...',
           description: "",
           section: "Todos",},{
       id: 'light-theme',
