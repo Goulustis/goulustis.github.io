@@ -3,7 +3,7 @@ layout: page
 title: Multi-View wire art(MVWA) Relaxed
 description: Given 2 or 3 images of line drawing, find a bunch of line in 3D such that when look at a certain direction will see the given image
 img: assets/img/mvwa.png
-importance: 1
+importance: 2
 category: work
 ---
 
