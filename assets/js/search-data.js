@@ -98,6 +98,11 @@ ninja.data = [{
           description: "A chatbot that can answer question about your undergrad sauder courses",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-image-to-line-art",
+          title: 'Image To Line Art',
+          description: "Takes any generic image and turn it into line art",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
             },},{id: "todos-blast-messages-push-ups-excersize-morning-30-min-wow-you-re-weak-haircut-booking-monday-at-12-00pm-aberdeen-plan-thursday-add-date-alerts-get-it-here-eye-degree-appointment-just-yeet-your-ass-here-check-car-practice-time-learn-more-cooking",
           title: 'blast messages push-ups / excersize morning 30 min Wow; you’re weak haircut booking...',
           description: "",
