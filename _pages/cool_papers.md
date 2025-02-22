@@ -7,3 +7,4 @@ nav_order: 9
 ---
 
 - [FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models](https://matankleiner.github.io/flowedit/#comfy) - better trajectory modifying an element in the image
+- [Paints-UNDO](https://github.com/lllyasviel/Paints-UNDO) - given a image, create the steps that can makes the image; no paper unfortunately
