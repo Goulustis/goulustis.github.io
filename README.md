@@ -1,6 +1,6 @@
 # Build locally:
 ```bash
-# NOTE: don't use the ruby thing, environment too hard to setup
+# NOTE: docker is the quickest; try not to use sudo
 sudo docker-compose up --build
 ```
 
