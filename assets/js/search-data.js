@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/userful_links/";
           },
-        },{id: "post-setting-up-ssh-key",
+        },{id: "post-social-media-amp-video-game-ideas",
+      
+        title: "Social media &amp; Video game ideas",
+      
+      description: "Random ideas tonight",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/ideas/";
+        
+      },
+    },{id: "post-setting-up-ssh-key",
       
         title: "Setting up ssh key",
       
