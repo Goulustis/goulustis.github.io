@@ -183,7 +183,7 @@ include: ["_scripts",
           "_pages/blog.md",
           "_pages/useful_links.md",
           "_pages/todos.md",
-          "_pages/cool_papers.md"
+          "_pages/interesting_reads.md"
           ]
 exclude:
   - bin/
