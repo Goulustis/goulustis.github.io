@@ -7,6 +7,7 @@ nav_order: 9
 ---
 ### Books
 - [Strategy Safari](https://www.goodreads.com/book/show/134254.Strategy_Safari) - Sales book
+- [The innovator's dilema](https://www.goodreads.com/book/show/2615.The_Innovator_s_Dilemma) - one of the best analysis of innovation I've read
 
 ### Papers
 - [FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models](https://matankleiner.github.io/flowedit/#comfy) - better trajectory modifying an element in the image
