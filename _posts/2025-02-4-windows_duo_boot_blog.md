@@ -17,7 +17,7 @@ sudo mount /dev/sda1 /mnt
 ```
 The efi partition should have a structure similar to:
 ```
-/mnt/efi/EFI/
+/mnt/EFI/
 ├── Boot/
 │   └── bootx64.efi
 ├── Microsoft/
@@ -26,9 +26,11 @@ The efi partition should have a structure similar to:
 │   │   ├── BCD
 │   │   ├── memtest.efi
 │   │   └── other boot-related files
+├── Ubuntu/
+|   ├── grubx64.efi
 ```
 
-**Step 3:** rename the bootmgfw.efi to ori_bootmgfw.efi. Copy grub.efi to the directory and rename it as the original windows efi, bootmgfw.efi. Reboot the PC should boot into grub.  
+**Step 3:** rename the `bootmgfw.efi` to `ori_bootmgfw.efi`. Copy `grubx64.efi` to the directory and rename it as the original windows efi, `bootmgfw.efi`. Reboot the PC should boot into grub.  
 
 *Note: bootmgfw.efi is the windows efi.*
 
