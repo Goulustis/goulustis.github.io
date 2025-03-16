@@ -114,17 +114,8 @@ ninja.data = [{
           description: "Takes any generic image and turn it into line art",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "todos-blast-messages-push-ups-excersize-morning-30-min-wow-you-re-weak-haircut-booking-monday-at-12-00pm-aberdeen-plan-thursday-add-date-alerts-get-it-here-eye-degree-appointment-just-yeet-your-ass-here-check-car-practice-time-learn-more-cooking",
-          title: 'blast messages push-ups / excersize morning 30 min Wow; you’re weak haircut booking...',
-          description: "",
-          section: "Todos",},{id: "todos-cook-vegtables-swim-ticket-hotel-singapore-code-perspective-orthogonal-projections",
-          title: 'cook vegtables   swim   ticket/hotel Singapore   code perspective/orthogonal projections',
-          description: "",
-          section: "Todos",},{id: "todos-investigate-if-perspective-works-better-or-not-look-at-singapore-and-nearby-to-decide-if-you-fly-back-immediately-after-conference",
-          title: 'Investigate if perspective works better or not look at singapore and nearby to...',
-          description: "",
-          section: "Todos",},{id: "todos-checkout-big-aunty-water-drinking-thing-fill-out-the-form-do-sis-s-img-amp-gt-drawing-half-done",
-          title: 'checkout big aunty water drinking thing fill out the form do sis’s img...',
+            },},{id: "todos-send-tony-s-example-make-placeholder-products-in-woo-commerce-fix-the-camera-bug-in-svg3d",
+          title: 'Send Tony’s example Make placeholder products in woo commerce Fix the camera bug...',
           description: "",
           section: "Todos",},{
       id: 'light-theme',
