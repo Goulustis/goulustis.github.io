@@ -10,6 +10,7 @@ nav_order: 9
 - [The innovator's dilema](https://www.goodreads.com/book/show/2615.The_Innovator_s_Dilemma) - one of the best analysis of innovation I've read
 - [blitzscaling](https://www.blitzscaling.com/) - scaling company fast
 - [The Lean Startup](https://theleanstartup.com/)
+- [the architect of riches](https://www.architectofriches.com/)
 
 ### Papers
 - [FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models](https://matankleiner.github.io/flowedit/#comfy) - better trajectory modifying an element in the image
