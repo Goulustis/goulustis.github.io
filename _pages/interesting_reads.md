@@ -11,6 +11,7 @@ nav_order: 9
 - [blitzscaling](https://www.blitzscaling.com/) - scaling company fast
 - [The Lean Startup](https://theleanstartup.com/)
 - [the architect of riches](https://www.architectofriches.com/)
+- [Beat the market](https://www.edwardothorp.com/books/beat-the-market/)
 
 ### Papers
 - [FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models](https://matankleiner.github.io/flowedit/#comfy) - better trajectory modifying an element in the image
