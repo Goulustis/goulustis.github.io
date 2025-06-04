@@ -13,6 +13,10 @@ nav_order: 9
 - [the architect of riches](https://www.architectofriches.com/)
 - [Beat the market](https://www.edwardothorp.com/books/beat-the-market/)
 
+### Books To Read
+- [Insanely Simple](https://www.goodreads.com/book/show/13383957-insanely-simple)
+- [Why We Get Sick](https://www.goodreads.com/book/show/49207255-why-we-get-sick) - book on insulin
+
 ### Papers
 - [FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models](https://matankleiner.github.io/flowedit/#comfy) - better trajectory modifying an element in the image
 - [Paints-UNDO](https://github.com/lllyasviel/Paints-UNDO) - given a image, create the steps that can makes the image; no paper unfortunately
