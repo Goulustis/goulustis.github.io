@@ -1,7 +1,7 @@
 # Build locally:
 ```bash
 # NOTE: docker is the quickest; try not to use sudo
-sudo docker-compose up --build
+sudo docker compose up --build
 ```
 
 # Webpage tips:
