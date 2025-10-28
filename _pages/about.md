@@ -41,12 +41,13 @@ Now that I have graduated, I spend all my time thinking how I can do nothing and
 - Writing chatbot for UBC `--` Maybe going somewhere
   - **Update:** UBC respond too slow; this is dead
 - Multiview Wire Art `--` Looks pretty good
-  - **Update:** Started a company `wire-art studio` to try to sell this. Unfortunately, the gatcha industry does not give a damn about tech. IP is the only thing that sells. Since there is no advantage in tech, I got no advantage in the industry; this is also dead
-- **New:** Starting as an expert computer guy @ tangled-up AI in a sketchy city.
+  - **Update:** Started a company `wire-art studio` to try to sell this. Unfortunately, the gatcha industry does not give a damn about tech. IP is the only thing that sells. Since there is no advantage in tech, I got no advantage in the industry; this is also dead.
+- **New:** Expert HR guy @ [Frasity](https://frasify.com/)
+- **New:** Expert computer guy @ tangled-up AI in a sketchy city.
 
 My current interests:
 - 3D vision
 - LLMs
-- Not going broke
+- Getting **UN**broken
 
 I'm open to any crazy ideas anyone has. Just YANK me an email!
