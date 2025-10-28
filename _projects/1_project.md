@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Multi-View wire art(MVWA) Relaxed
-description: Given 2 or 3 images of line drawing, find a bunch of line in 3D such that when look at a certain direction will see the given image
+description: Find 3D lines whose projections reproduce the given 2–3 line drawings.
 img: assets/img/mvwa.png
 importance: 2
 category: work
