@@ -36,7 +36,7 @@ I'm a not so recent graduated masters student from the [University of British Co
 Now that I have graduated, I spend all my time thinking how I can do nothing and money come to me. I tried:
 - Crypto `--` **DEAD**
   - **Update:** Trump did it! Account is blown; officially broke
-- Wav/mp4 to Midi `--` Maybe going somewhere
+- Wav/mp4 to Midi `--` **DEAD**
   - **Update:** Lacking a crazy guy to pull the entire circus together; project is blown up
 - Writing chatbot for UBC `--` **DEAD**
   - **Update:** UBC respond too slow; this is dead
