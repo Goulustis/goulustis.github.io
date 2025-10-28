@@ -34,15 +34,15 @@ latest_posts:
 I'm a not so recent graduated masters student from the [University of British Columbia](https://vision.cs.ubc.ca/) supervised by Prof. [Kwang Moo Yi](https://www.cs.ubc.ca/~kmyi/) with a focus on combining [Event camera](https://www.prophesee.ai/event-based-sensor-imx646-sony-prophesee/) data with RGB images to create [neural fields](https://www.matthewtancik.com/nerf).
 
 Now that I have graduated, I spend all my time thinking how I can do nothing and money come to me. I tried:
-- Crypto `--` Lost big bucks
-  - **Update:** Account is blown; officially broke
+- Crypto `--` **DEAD**
+  - **Update:** Trump did it! Account is blown; officially broke
 - Wav/mp4 to Midi `--` Maybe going somewhere
   - **Update:** Lacking a crazy guy to pull the entire circus together; project is blown up
-- Writing chatbot for UBC `--` Maybe going somewhere
+- Writing chatbot for UBC `--` **DEAD**
   - **Update:** UBC respond too slow; this is dead
 - Multiview Wire Art `--` Looks pretty good
   - **Update:** Started a company `wire-art studio` to try to sell this. Unfortunately, the gatcha industry does not give a damn about tech. IP is the only thing that sells. Since there is no advantage in tech, I got no advantage in the industry; this is also dead.
-- **New:** Expert HR guy @ [Frasity](https://frasify.com/)
+- **New:** Expert HR/Product Manager guy @ [Frasity](https://frasify.com/)
 - **New:** Expert computer guy @ tangled-up AI in a sketchy city.
 
 My current interests:
