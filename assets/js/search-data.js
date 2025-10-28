@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/userful_links/";
           },
-        },{id: "post-social-media-amp-video-game-ideas",
+        },{id: "post-joining-tangled-up",
+      
+        title: "Joining Tangled Up",
+      
+      description: "Journal Tangled-up",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/joining_tangled_up/";
+        
+      },
+    },{id: "post-social-media-amp-video-game-ideas",
       
         title: "Social media &amp; Video game ideas",
       
