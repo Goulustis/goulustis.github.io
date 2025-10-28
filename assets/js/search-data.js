@@ -101,7 +101,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-multi-view-wire-art-mvwa-relaxed",
           title: 'Multi-View wire art(MVWA) Relaxed',
-          description: "Given 2 or 3 images of line drawing, find a bunch of line in 3D such that when look at a certain direction will see the given image",
+          description: "Find 3D lines whose projections reproduce the given 2–3 line drawings.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-ubc-sauder-course-advising-chatbot",
@@ -114,8 +114,8 @@ ninja.data = [{
           description: "Takes any generic image and turn it into line art",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "todos-send-tony-s-example-make-placeholder-products-in-woo-commerce-fix-the-camera-bug-in-svg3d",
-          title: 'Send Tony’s example Make placeholder products in woo commerce Fix the camera bug...',
+            },},{id: "todos-this-page-is-obsolete",
+          title: 'THIS PAGE IS OBSOLETE',
           description: "",
           section: "Todos",},{
       id: 'light-theme',
