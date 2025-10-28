@@ -5,6 +5,4 @@ inline: true
 related_posts: false
 ---
 
-- [ ] Send Tony's example
-- [ ] Make placeholder products in woo commerce
-- [ ] Fix the camera bug in svg3d
+- [ ] THIS PAGE IS OBSOLETE
