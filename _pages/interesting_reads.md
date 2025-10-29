@@ -24,3 +24,4 @@ nav_order: 9
 - [Understanding Hallucinations in Diffusion Models through Mode Interpolation](https://arxiv.org/abs/2406.09358) - gives a reason for why diffusion model generate images with 6 fingers
 - [High-contrast Computational Caustic Design](https://infoscience.epfl.ch/bitstreams/361f310f-e863-4ae5-ad1c-4ca742a462e5/download) - shadow cast image
 - [Joint Optimization of Neural Radiance Fields and Continuous Camera Motion from a Monocular Video](https://arxiv.org/abs/2504.19819) - could try multi-embedding and global opt from my own paper to see if that does anything...
+- [Increments of Uncorrelated Time Series Can Be Predicted With a Universal 75% Probability of Success](https://arxiv.org/pdf/cond-mat/0001324) - one of my favourite useless papers
