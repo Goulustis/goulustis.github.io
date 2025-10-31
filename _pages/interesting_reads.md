@@ -17,6 +17,10 @@ nav_order: 9
 - [Insanely Simple](https://www.goodreads.com/book/show/13383957-insanely-simple)
 - [Why We Get Sick](https://www.goodreads.com/book/show/49207255-why-we-get-sick) - book on insulin
 
+### Blogs/Posts
+- [Michael Black's tips on writing paper](https://perceiving-systems.blog/en/post/writing-a-good-scientific-paper)
+
+
 ### Papers
 - [FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models](https://matankleiner.github.io/flowedit/#comfy) - better trajectory modifying an element in the image
 - [Paints-UNDO](https://github.com/lllyasviel/Paints-UNDO) - given a image, create the steps that can makes the image; no paper unfortunately
