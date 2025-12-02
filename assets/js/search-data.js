@@ -125,8 +125,8 @@ ninja.data = [{
           description: "Takes any generic image and turn it into line art",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "todos-this-page-is-obsolete",
-          title: 'THIS PAGE IS OBSOLETE',
+            },},{id: "todos-answer-为什么在这种情况下跑-为什么知道答案却不回答-some-notes-you-feel-you-don-t-know-how-to-your-is-quite-bad-at-this",
+          title: 'Answer: 为什么在这种情况下跑，为什么知道答案却不回答。 SOME NOTES: You feel you don’t know how to **. Your...',
           description: "",
           section: "Todos",},{
       id: 'light-theme',
