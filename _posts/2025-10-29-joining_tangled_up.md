@@ -2,7 +2,7 @@
 layout: post
 title: Joining Tangled Up
 date: 2025-10-28 00:51:00
-description: Journal Tangled-up
+description: Joining Tangled-up
 # tags: random
 # categories: random
 thumbnail: assets/img/9.jpg
