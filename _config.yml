@@ -91,6 +91,7 @@ blog_name: Matthew's Blog # blog_name will be displayed in your blog page
 blog_description: A bunch of random thoughts in the guy's mind
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
+future: true # show posts with future dates
 
 # Pagination
 pagination:
