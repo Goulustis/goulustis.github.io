@@ -37,7 +37,7 @@ thumbnail: assets/img/siggraph_asia_2025.jpg
 - **QMF-BLEND: Quantized Matrix Factorization for Efficient Blendshape Compression** (my favourite)
     - Prelim: A blendshape is a reference head mesh $R$ with $\Delta r$ that describe possible morphing (similar to orthogonal basis). So, $R + W\Delta r$ describes all possible expression
     - Method notable ideas:
-        - use matrix factorization to sparcify $\Delta r$ for storage
+        - use matrix factorization to sparcify $\Delta r$ for storage. Adam is used for the factorization because the zeroing of the elements in the matrix is equivalent to introducing noise. Adam is built specifically for this scenerio.
         - add a laplacian to ensure smoothness. Specifically, the laplacian is on the error of the factorization and not the factorization. If applied on the factorization, facial wrinkles will be removed
         - find locations with surface difformations and push non-zero values to those areas by importance weighting.
         - Finally, quantize
