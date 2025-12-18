@@ -84,6 +84,17 @@ thumbnail: assets/img/siggraph_asia_2025.jpg
         - replay the eye movement of a arts professor of how he/she observe the art
         - replay eye movement of a police officer looking for suspect in a crowd
 
+### Memorable talk
+- Base CEO - on nezha2
+    - Chinese directors like big cinematic pieces, the US focus more on characters
+    - China market is the number for animated films. Nezha's local box office beats all other areas combined
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+  <img src="{{ '/assets/img/sigg_2025_imgs/nezha2_talk_slide1.jpg' | relative_url }}" alt="Nezha2 Talk Slide 1" style="max-width: 48%; height: auto;">
+  <img src="{{ '/assets/img/sigg_2025_imgs/nezha2_talk_slide2.jpg' | relative_url }}" alt="Nezha2 Talk Slide 2" style="max-width: 48%; height: auto;">
+</div>
+    
+
 ### Memorable company:
 - Unicus:
     - Image $\to$ 3d lego pieces. Print the lego and sells it.
