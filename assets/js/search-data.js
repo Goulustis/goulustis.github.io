@@ -44,11 +44,22 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/userful_links/";
           },
-        },{id: "post-joining-tangled-up",
+        },{id: "post-siggraph-asia-2025-overview",
+      
+        title: "Siggraph Asia 2025 Overview",
+      
+      description: "Siggraph Asia 2025 Overview",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/siggraph_asia_overview/";
+        
+      },
+    },{id: "post-joining-tangled-up",
       
         title: "Joining Tangled Up",
       
-      description: "Journal Tangled-up",
+      description: "Joining Tangled-up",
       section: "Posts",
       handler: () => {
         
