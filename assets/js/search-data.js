@@ -44,7 +44,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/userful_links/";
           },
-        },{id: "post-siggraph-asia-2025-overview",
+        },{id: "post-successful-company-policies",
+      
+        title: "Successful company policies",
+      
+      description: "Successful company policies",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/successful_company_policies/";
+        
+      },
+    },{id: "post-bayer-meeting-recollection",
+      
+        title: "Bayer meeting recollection",
+      
+      description: "Bayer meeting recollection",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/bayer_meeting_recollection/";
+        
+      },
+    },{id: "post-siggraph-asia-2025-overview",
       
         title: "Siggraph Asia 2025 Overview",
       
@@ -136,8 +158,8 @@ ninja.data = [{
           description: "Takes any generic image and turn it into line art",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "todos-answer-为什么在这种情况下跑-为什么知道答案却不回答-some-notes-you-feel-you-don-t-know-how-to-your-is-quite-bad-at-this",
-          title: 'Answer: 为什么在这种情况下跑，为什么知道答案却不回答。 SOME NOTES: You feel you don’t know how to **. Your...',
+            },},{id: "todos-none-bros",
+          title: 'None bros',
           description: "",
           section: "Todos",},{
       id: 'light-theme',
