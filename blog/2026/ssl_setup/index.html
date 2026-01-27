@@ -1,0 +1,81 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Setup SSL for HTTPS | Matthew Tang </title> <meta name="author" content="Matthew Tang"> <meta name="description" content="Setup SSL for HTTPS"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/m_favicon.png?1fd54959f192dc7d4b84e06a14225cce"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://goulustis.github.io/blog/2026/ssl_setup/"> <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Matthew Tang </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/todos/">todos </a> </li> <li class="nav-item "> <a class="nav-link" href="/interesting_reads/">Interesting Reads </a> </li> <li class="nav-item "> <a class="nav-link" href="/userful_links/">Useful links </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Setup SSL for HTTPS</h1> <p class="post-meta"> Created in January 18, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a> </p> </header> <article class="post-content"> <div id="markdown-content"> <h1 id="introduction">Introduction</h1> <p>This is a tutorial on how to setup the ssl certification to enable https for a website</p> <h4 id="step1---setup-dns-forwarding"><strong>Step1 - Setup DNS Forwarding</strong></h4> <p>Add direct forwarding to DNS. Here we use <code class="language-plaintext highlighter-rouge">agent</code> as example. We add a subdomain to <code class="language-plaintext highlighter-rouge">quant-speed.com</code> so the link is <code class="language-plaintext highlighter-rouge">agent.quant-speed.com</code>.</p> <div class="row mt-3"> <div class="col-sm-12 mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/ali_dns_panel-480.webp 480w,/assets/img/ali_dns_panel-800.webp 800w,/assets/img/ali_dns_panel-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/ali_dns_panel.png" class="rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> </div> <div class="caption"> The DNS panel for configuration (Aliyun example). </div> <h4 id="step2---initial-nginx-setup"><strong>Step2 - Initial nginx setup</strong></h4> <p>After nginx installation, in the directory <code class="language-plaintext highlighter-rouge">/etc/nginx/conf.d</code>, create <code class="language-plaintext highlighter-rouge">agent.quant-speed.com.conf</code> with</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server {
+    listen 80;                                  # 80 is http port
+    server_name agent.quant-speed.com;          # target url
+
+    # Allow Let's Encrypt to verify domain ownership
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/letsencrypt;  # webroot directory for verification
+        try_files $uri =404;
+    }
+
+    # Proxy other requests to backend service
+    location / {
+        proxy_pass http://localhost:8589;       # port to forward to
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+    }
+}
+</code></pre></div></div> <p>check if the config is correct with <code class="language-plaintext highlighter-rouge">nginx -t</code><br> restart to check if it works <code class="language-plaintext highlighter-rouge">sudo systemctl restart nginx</code></p> <h4 id="step3---setup-ssl"><strong>Step3 - Setup SSL</strong></h4> <p>Install acme.sh</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/acmesh-official/acme.sh.git
+<span class="nb">cd</span> ./acme.sh
+./acme.sh <span class="nt">--install</span> <span class="nt">-m</span> my@example.com
+</code></pre></div></div> <p>Make a directory for acme to challenge</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create directory and set owner to www-data (recommended)</span>
+<span class="nb">sudo mkdir</span> <span class="nt">-p</span> /var/www/letsencrypt
+<span class="nb">sudo chown</span> <span class="nt">-R</span> www-data:www-data /var/www/letsencrypt
+<span class="nb">sudo chmod</span> <span class="nt">-R</span> 755 /var/www/letsencrypt
+</code></pre></div></div> <p>Create directory for SSL certificates</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /etc/nginx/tls/agent
+</code></pre></div></div> <p>Apply for the SSL</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># change `agent.quant-speed.com` to target url</span>
+<span class="c"># After installation, acme.sh is typically at ~/.acme.sh/acme.sh</span>
+~/.acme.sh/acme.sh <span class="nt">--issue</span> <span class="nt">-d</span> agent.quant-speed.com <span class="nt">--webroot</span> /var/www/letsencrypt
+</code></pre></div></div> <p>It is a success if you see:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/gT2UalfrnC37aJu0bHy1BWQgGy2uuI2KDAjBgNVHREEHDAaghh4aWFvdGFpLnRh
+bmdsZWR1cC1haS5jb20wCgYIKoZIzj0EAwMDaQAwZgIxAP/pcT9+4yh/IVfYoZ66
+tDCOA8Pz/XfQCDTfhHb4kEpgToJSisFsT13n2jMvxCj3bQIxAM/O1CA0HAB8LbWS
+AfBade7OOyXxEsAwCIzairGq2jMSzZGhiTT3vvyZ4DuV/9dd+g==
+-----END CERTIFICATE-----
+</code></pre></div></div> <p>Install the key. Critical Notes</p> <ul> <li><strong>update agent.quant-speed.com to target url</strong></li> <li><strong>that <code class="language-plaintext highlighter-rouge">agent</code> in <code class="language-plaintext highlighter-rouge">--fullchain-file</code></strong></li> </ul> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.acme.sh/acme.sh <span class="nt">--install-cert</span> <span class="nt">-d</span> agent.quant-speed.com <span class="se">\</span>
+  <span class="nt">--key-file</span> /etc/nginx/tls/agent/key.pem <span class="se">\</span>
+  <span class="nt">--fullchain-file</span> /etc/nginx/tls/agent/cert.pem <span class="se">\</span>
+  <span class="nt">--reloadcmd</span> <span class="s2">"service nginx force-reload"</span>
+<span class="nb">sudo chown </span>www-data:www-data /etc/nginx/tls/agent/<span class="k">*</span>.pem
+<span class="nb">sudo chmod </span>600 /etc/nginx/tls/agent/<span class="k">*</span>.pem  <span class="c"># Ensure only owner can read/write</span>
+</code></pre></div></div> <h4 id="step4---update-config-with-ssl"><strong>Step4 - Update config with SSL</strong></h4> <p>Update <code class="language-plaintext highlighter-rouge">/etc/nginx/conf.d/agent.quant-speed.com.conf</code> to redirect HTTP to HTTPS and add HTTPS server block:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># HTTP server block - redirects to HTTPS except for Let's Encrypt verification
+server {
+    listen 80;
+    server_name agent.quant-speed.com;
+    
+    # Allow Let's Encrypt to verify domain ownership (needed for renewals)
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/letsencrypt;
+        try_files $uri =404;
+    }
+    
+    # Redirect all other HTTP traffic to HTTPS
+    location / {
+        return 301 https://$server_name$request_uri;
+    }
+}
+
+# HTTPS server block
+server {
+    listen 443 ssl http2;                                   # HTTPS 
+    server_name agent.quant-speed.com;                      # update to target url
+
+    # SSL certificate paths
+    ssl_certificate     /etc/nginx/tls/agent/cert.pem;
+    ssl_certificate_key /etc/nginx/tls/agent/key.pem;
+
+    # Proxy configuration (same as HTTP block)
+    location / {
+        proxy_pass http://localhost:8589;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+    }
+}
+</code></pre></div></div> <p>check if the config is correct with <code class="language-plaintext highlighter-rouge">nginx -t</code><br> restart to check if it works <code class="language-plaintext highlighter-rouge">sudo systemctl restart nginx</code></p> <p>YOU ARE DONE!</p> </div> </article> </div> </div> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>

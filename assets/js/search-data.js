@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/userful_links/";
           },
-        },{id: "post-successful-company-policies",
+        },{id: "post-setup-ssl-for-https",
+      
+        title: "Setup SSL for HTTPS",
+      
+      description: "Setup SSL for HTTPS",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/ssl_setup/";
+        
+      },
+    },{id: "post-successful-company-policies",
       
         title: "Successful company policies",
       
