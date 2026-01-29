@@ -52,7 +52,7 @@ server {
 ```
 
 check if the config is correct with `nginx -t`  
-restart to check if it works `sudo systemctl restart nginx`
+restart to check if it works `sudo systemctl restart nginx` or `nginx -s reload`
 
 #### **Step3 - Setup SSL**
 Install acme.sh
@@ -149,6 +149,6 @@ server {
 ```
 
 check if the config is correct with `nginx -t`  
-restart to check if it works `sudo systemctl restart nginx`  
+restart to check if it works `sudo systemctl restart nginx` or `nginx -s reload`
 
 YOU ARE DONE!
