@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/userful_links/";
           },
-        },{id: "post-setup-ssl-for-https",
+        },{id: "post-how-to-tell-a-story",
+      
+        title: "How to tell a story",
+      
+      description: "How to tell a story",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/story_telling/";
+        
+      },
+    },{id: "post-setup-ssl-for-https",
       
         title: "Setup SSL for HTTPS",
       
