@@ -19,8 +19,9 @@ nav_order: 9
 
 ### Blogs/Posts
 - [Michael Black's tips on writing paper](https://perceiving-systems.blog/en/post/writing-a-good-scientific-paper)
-- [Steering LLms via activatings](https://huggingface.co/spaces/dlouapre/eiffel-tower-llama)
+- [Steering LLms via activatings](https://huggingface.co/spaces/dlouapre/eiffel-tower-llama) - Unsupervised learning of semantics of layer activations steering model behaviors
 - [On the Biology of LLMs](https://transformer-circuits.pub/2025/attribution-graphs/biology.html#structure)
+- [game theory patterns at work](https://daeus.blog/2026/01/18/game-theory-patterns-at-work/) - How reward systems influence company culture
 
 
 ### Papers
