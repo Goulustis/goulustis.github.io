@@ -19,6 +19,8 @@ nav_order: 9
 
 ### Blogs/Posts
 - [Michael Black's tips on writing paper](https://perceiving-systems.blog/en/post/writing-a-good-scientific-paper)
+- [Steering LLms via activatings](https://huggingface.co/spaces/dlouapre/eiffel-tower-llama)
+- [On the Biology of LLMs](https://transformer-circuits.pub/2025/attribution-graphs/biology.html#structure)
 
 
 ### Papers
