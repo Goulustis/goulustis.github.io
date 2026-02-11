@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/userful_links/";
           },
-        },{id: "post-how-to-tell-a-story",
+        },{id: "post-interesting-front",
+      
+        title: "Interesting front",
+      
+      description: "Interesting front",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/interesting_front/";
+        
+      },
+    },{id: "post-how-to-tell-a-story",
       
         title: "How to tell a story",
       
