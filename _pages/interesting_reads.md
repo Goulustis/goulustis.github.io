@@ -22,6 +22,7 @@ nav_order: 9
 - [Steering LLms via activatings](https://huggingface.co/spaces/dlouapre/eiffel-tower-llama) - Unsupervised learning of semantics of layer activations steering model behaviors
 - [On the Biology of LLMs](https://transformer-circuits.pub/2025/attribution-graphs/biology.html#structure)
 - [game theory patterns at work](https://daeus.blog/2026/01/18/game-theory-patterns-at-work/) - How reward systems influence company culture
+- [Notes on Muon Optimizer](https://1zb.github.io/assets/pdf/muon_notes.pdf)
 
 
 ### Papers
