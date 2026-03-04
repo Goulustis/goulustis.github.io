@@ -23,7 +23,7 @@ nav_order: 9
 - [On the Biology of LLMs](https://transformer-circuits.pub/2025/attribution-graphs/biology.html#structure)
 - [game theory patterns at work](https://daeus.blog/2026/01/18/game-theory-patterns-at-work/) - How reward systems influence company culture
 - [Notes on Muon Optimizer](https://1zb.github.io/assets/pdf/muon_notes.pdf)
-
+- [observational memory from Mantr](https://mastra.ai/research/observational-memory)
 
 ### Papers
 - [FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models](https://matankleiner.github.io/flowedit/#comfy) - better trajectory modifying an element in the image
