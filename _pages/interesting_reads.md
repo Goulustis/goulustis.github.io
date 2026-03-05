@@ -26,6 +26,7 @@ nav_order: 9
 - [observational memory from Mantr](https://mastra.ai/research/observational-memory)
 
 ### Papers
+- [Anthropic's Claude solving a fancy math problem](https://drchangliu.github.io/ClaudeCycles.html)
 - [FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models](https://matankleiner.github.io/flowedit/#comfy) - better trajectory modifying an element in the image
 - [Paints-UNDO](https://github.com/lllyasviel/Paints-UNDO) - given a image, create the steps that can makes the image; no paper unfortunately
 - [Random Features for Large-Scale Kernel Machines](https://papers.nips.cc/paper_files/paper/2007/hash/013a006f03dbc5392effeb8f18fda755-Abstract.html); From memory of a talk - shows random CNN kernels are good feature extractors and performs better than fully connected layers
