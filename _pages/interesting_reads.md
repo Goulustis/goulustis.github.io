@@ -24,6 +24,7 @@ nav_order: 9
 - [game theory patterns at work](https://daeus.blog/2026/01/18/game-theory-patterns-at-work/) - How reward systems influence company culture
 - [Notes on Muon Optimizer](https://1zb.github.io/assets/pdf/muon_notes.pdf)
 - [observational memory from Mantr](https://mastra.ai/research/observational-memory)
+- [harness as task decomposer](https://alexzhang13.github.io/blog/2026/harness/)
 
 ### Papers
 - [Anthropic's Claude solving a fancy math problem](https://drchangliu.github.io/ClaudeCycles.html)
